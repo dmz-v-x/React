@@ -8,9 +8,17 @@ console.log(heading);
 
 // Using JSX
 
-const jsxHeading = <h1 id="heading">Hello World!</h1>;
+const jsxHeading = (
+  <h1 id="heading" tabIndex="1">
+    Hello World!
+  </h1>
+);
 console.log(jsxHeading);
+
+const HeadingComponent = () => {
+  return <h1 className="heading">This is a heading Component!</h1>;
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent />);
