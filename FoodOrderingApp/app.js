@@ -19,7 +19,8 @@ const Header = () => (
   </div>
 );
 
-const RestrauntCard = () => {
+const RestrauntCard = (props) => {
+  console.log(props);
   return (
     <div className="res-card">
       <img
@@ -27,8 +28,8 @@ const RestrauntCard = () => {
         alt="food-image"
         src="https://img.freepik.com/free-photo/top-view-fried-potatoes-with-seasonings-bread-loafs-different-vegetables-dark-desk_140725-115309.jpg?size=626&ext=jpg&uid=R133719140&ga=GA1.1.1888230477.1704878296&semt=ais"
       />
-      <h3>Handi Punjab Ki</h3>
-      <h4>North Indian, Asian</h4>
+      <h3>{props.resName}</h3>
+      <h4>{props.cuisine}</h4>
       <h5>4.5 stars</h5>
       <h5>38 minutes</h5>
     </div>
@@ -39,24 +40,11 @@ const Body = () => (
   <div className="body">
     <div className="search">Search</div>
     <div className="res-container">
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
-      <RestrauntCard />
+      <RestrauntCard
+        resName="Meghana Foods"
+        cuisine="Biryani, North Indian, Asian"
+      />
+      <RestrauntCard resName="KFC" cuisine="Burger, Fast Food" />
     </div>
   </div>
 );
