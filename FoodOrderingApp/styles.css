@@ -12,6 +12,7 @@
   font-size: 22px;
   display: flex;
   list-style-type: none;
+  margin: 20px;
 }
 
 .nav-items > ul > li {
@@ -69,6 +70,13 @@
 }
 
 .filter {
+  display: flex;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.Login {
+  display: flex;
   margin: 10px;
   cursor: pointer;
 }
