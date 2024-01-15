@@ -24,7 +24,23 @@
   width: 200px;
   margin: 5px;
   border: 1px solid black;
-  background-color: #f0f0f0;
+  background-color: #efdfcc;
+}
+
+.shimmer-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  text-align: center;
+  padding: 5px 5px;
+  width: 200px;
+  height: 400px;
+  margin: 5px;
+  border: 1px solid black;
+  background-color: #efdfcc;
 }
 
 /* .res-container:last-child {
